@@ -13,7 +13,7 @@ def reverse(index,arr,ds):
 def reverseby_swap(index,arr,n):
 
     
-    if index == int(n/2):
+    if index >= int(n/2):
         return arr
     arr[index], arr[n-index-1] = arr[n-index-1], arr[index]
     return reverseby_swap(index+1,arr,n)
